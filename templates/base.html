@@ -9,13 +9,21 @@
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
   <!-- Include any page-specific JavaScript using this block. -->
-  {% block js %}
+  {% block js %} <!--each page might have unique js in the head?-->
   {% endblock %}
 
   <link href="/static/css/site.css" rel="stylesheet">
 </head>
 <body>
   <h1>Welcome to Balloonicorn's Trading Card site</h1>
+
+  <nav class="navbar">
+    <div class="menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/cards">Cards</a></li>    
+    </div>
+    </ul>
+  </nav>
 
   <!-- Include the page's content with this block. -->
   {% block body %}
